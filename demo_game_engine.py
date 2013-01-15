@@ -33,7 +33,7 @@ class DemoGameEngine(GameEngine):
         
         x_mod = 0
         y_mod = 0
-        
+        """
         if self.get_key(K_a):
             x_mod -= self.p_speed
         if self.get_key(K_d):
@@ -42,7 +42,7 @@ class DemoGameEngine(GameEngine):
             y_mod -= self.p_speed
         if self.get_key(K_s):
             y_mod += self.p_speed
-            
+        """    
         if self.get_key(K_LEFT):
             if self.l_count % self.l_mod == 0:
                 self.player.rotate_by_radians(-math.pi/4)
@@ -57,7 +57,7 @@ class DemoGameEngine(GameEngine):
         elif self.get_key(K_DOWN):
             x_mod = -self.player.rel_dir().x * self.p_speed
             y_mod = -self.player.rel_dir().y * self.p_speed
-        self.player.move(x_mod, y_mod, self.screen)  
+        self.player.move_rel(x_mod, y_mod, self.screen)  
         print self.player.rel_dir()
         
         if self.get_key(K_SPACE):

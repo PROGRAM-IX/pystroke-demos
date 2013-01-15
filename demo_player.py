@@ -10,4 +10,4 @@ class DemoPlayer(Vex):
                       Vector2(0, -10), Vector2(-10, 10), Vector2(-30, 0),
                       Vector2(-20, 30), Vector2(-10, 20), Vector2(-4, 24),
                       Vector2(4, 24), Vector2(10, 20), Vector2(20, 30)], 
-                      2)
+                      2, 1, 1)
