@@ -1,6 +1,6 @@
 import pygame
 from pygame.locals import *
-from hud import *
+from pystroke.hud import *
 import math
 import random
 from pystroke.locals import QUIT_FLAG, CONTINUE_FLAG, SWITCH_FLAG
